@@ -19,14 +19,21 @@
             text-align: center;
             padding: 60px 20px;
             border-bottom: 5px solid #de3121;
-            background-image: linear-gradient(rgba(58, 53, 50, 0.8), rgba(58, 53, 50, 0.8)), url('https://images.unsplash.com/photo-1599407951631-0985532788e2?q=80&w=1280&auto=format&fit=crop'); /* 和風のテクスチャ感 */
-            background-size: cover;
         }
 
         header h1 { margin: 0; font-size: 36px; letter-spacing: 4px; }
         header p { margin: 15px 0 0 0; color: #ffffff; font-size: 18px; }
 
         .container { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+
+        .intro-box {
+            text-align: center; 
+            margin-bottom: 40px; 
+            background: #fff; 
+            padding: 20px; 
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
 
         .section-title {
             text-align: center;
@@ -47,7 +54,6 @@
             background-color: #de3121;
         }
 
-        /* 🏰 お城カードのデザイン */
         .castle-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -67,14 +73,13 @@
             width: 100%;
             height: 200px;
             object-fit: cover;
-            background-color: #ddd;
+            background-color: #eaeaea;
         }
 
         .castle-info { padding: 20px; }
         .castle-info h3 { margin: 0 0 10px; color: #de3121; font-size: 20px; }
         .castle-info p { margin: 0; font-size: 15px; line-height: 1.6; color: #555; }
 
-        /* ゲームボタン */
         .game-banner {
             background-color: #3a3532;
             color: #fff;
@@ -109,7 +114,7 @@
 
     <div class="container">
         
-        <div class="intro-box" style="text-align: center; margin-bottom: 40px;">
+        <div class="intro-box">
             <p>戦国時代の風雲児・織田信長。彼が築き、拠り所とした城郭を巡りながら、天下布武への道を辿ります。</p>
         </div>
 
@@ -117,7 +122,7 @@
         
         <div class="castle-grid">
             <div class="castle-card">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Shobata_Castle_monument.JPG/640px-Shobata_Castle_monument.JPG" class="castle-img" alt="勝幡城">
+                <img src="castle1.jpg" class="castle-img" alt="勝幡城">
                 <div class="castle-info">
                     <h3>勝幡城 (しょばたじょう)</h3>
                     <p>信長公の生誕地とされる城。尾張と伊勢を結ぶ交通の要所に築かれた、織田弾正忠家発展の礎となった平城です。</p>
@@ -125,7 +130,7 @@
             </div>
 
             <div class="castle-card">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Nagoya_Castle_Honmaru-Palace_01.jpg/640px-Nagoya_Castle_Honmaru-Palace_01.jpg" class="castle-img" alt="那古野城">
+                <img src="castle2.jpg" class="castle-img" alt="那古野城">
                 <div class="castle-info">
                     <h3>那古野城 (なごやじょう)</h3>
                     <p>父・信秀から譲り受け、信長公が青年時代を過ごした拠点。現在の名古屋城二の丸付近に位置していました。</p>
@@ -133,7 +138,7 @@
             </div>
 
             <div class="castle-card">
-                <img src="https://images.unsplash.com/photo-1590559899731-39722361664c?q=80&w=640&auto=format&fit=crop" class="castle-img" alt="清州城">
+                <img src="castle3.jpg" class="castle-img" alt="清州城">
                 <div class="castle-info">
                     <h3>清州城 (きよすじょう)</h3>
                     <p>尾張統一の本拠地。桶狭間の戦いへ出陣した地であり、ここから天下への第一歩が刻まれました。</p>
@@ -141,7 +146,7 @@
             </div>
 
             <div class="castle-card">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Komakiyama-jo_01.jpg/640px-Komakiyama-jo_01.jpg" class="castle-img" alt="小牧山城">
+                <img src="castle4.jpg" class="castle-img" alt="小牧山城">
                 <div class="castle-info">
                     <h3>小牧山城 (こまきやまじょう)</h3>
                     <p>美濃攻略のために築かれた大規模な城郭。信長公が初めて自ら設計し、石垣を本格的に採用し始めた記念すべき城です。</p>
@@ -149,7 +154,7 @@
             </div>
 
             <div class="castle-card">
-                <img src="https://images.unsplash.com/photo-1610448721566-47369c768e70?q=80&w=640&auto=format&fit=crop" class="castle-img" alt="岐阜城">
+                <img src="castle5.jpg" class="castle-img" alt="岐阜城">
                 <div class="castle-info">
                     <h3>岐阜城 (ぎふじょう)</h3>
                     <p>「天下布武」の印を使い始めた地。金華山の山頂にそびえ、その壮麗さは宣教師ルイス・フロイスも驚嘆したと言われています。</p>
@@ -157,7 +162,7 @@
             </div>
 
             <div class="castle-card">
-                <img src="https://images.unsplash.com/photo-1599407951631-0985532788e2?q=80&w=640&auto=format&fit=crop" class="castle-img" alt="安土城">
+                <img src="castle6.jpg" class="castle-img" alt="安土城">
                 <div class="castle-info">
                     <h3>安土城 (あづちじょう)</h3>
                     <p>信長公の集大成。五重六階の絢爛豪華な天主（安土山）がそびえ、城郭建築の歴史を塗り替えた幻の名城です。</p>

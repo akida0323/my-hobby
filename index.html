@@ -13,6 +13,29 @@
             font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', sans-serif;
         }
 
+        /* 🗺️ ページを切り替えるメニュー（ナビゲーションバー） */
+        .nav-bar {
+            background-color: #3a3532;
+            text-align: center;
+            padding: 12px;
+        }
+        .nav-bar a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 8px 20px;
+            margin: 0 10px;
+            font-weight: bold;
+            border-radius: 4px;
+            transition: all 0.3s;
+        }
+        .nav-bar a.active {
+            background-color: #de3121; /* 信長公のテーマ：織田赤 */
+            color: #ffffff;
+        }
+        .nav-bar a:hover:not(.active) {
+            background-color: #555;
+        }
+
         header {
             background-color: #3a3532;
             color: #e6b422;
@@ -72,7 +95,7 @@
         .castle-img {
             width: 100%;
             height: 200px;
-            object-fit: contain;
+            object-fit: contain; /* 👈お写真が切れない設定もバッチリ引き継いでいます */
             background-color: #eaeaea;
         }
 
@@ -106,6 +129,12 @@
     </style>
 </head>
 <body>
+
+    <div class="nav-bar">
+        <a href="index.html" class="active">織田信長</a>
+        <a href="hideyoshi.html">豊臣秀吉</a>
+        <a href="#">徳川家康 (建築中)</a>
+    </div>
 
     <header>
         <h1>織田の城砦</h1>
@@ -148,7 +177,7 @@
             <div class="castle-card">
                 <img src="castle4.jpg" class="castle-img" alt="小牧山城">
                 <div class="castle-info">
-                    <h3>小牧山城 (こまきやまじょう)</h3>
+                    <h3>小牧山城 (こまきyamajyou)</h3>
                     <p>美濃攻略のために築かれた大規模な城郭。信長公が初めて自ら設計し、石垣を本格的に採用し始めた記念すべき城です。</p>
                 </div>
             </div>

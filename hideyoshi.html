@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>豊臣の天下と黄金の名城 〜戦国城主の趣味の部屋〜</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #fcfaf2; /* 柔らかな白（象牙色） */
+            color: #2b2b2b;
+            font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', sans-serif;
+        }
+
+        /* 秀吉公のテーマ：黄金（ゴールド）と黒漆・朱赤 */
+        header {
+            background-color: #242220; /* 黒漆のような深い黒 */
+            color: #d4af37; /* 輝く太閤ゴールド */
+            text-align: center;
+            padding: 50px 20px;
+            border-bottom: 5px solid #c93a2b; /* 華やかな朱色 */
+        }
+
+        header h1 { margin: 0; font-size: 36px; letter-spacing: 4px; }
+        header p { margin: 15px 0 0 0; color: #ffffff; font-size: 18px; }
+
+        /* 🗺️ ページを切り替えるメニュー（ナビゲーションバー） */
+        .nav-bar {
+            background-color: #3a3532;
+            text-align: center;
+            padding: 12px;
+        }
+        .nav-bar a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 8px 20px;
+            margin: 0 10px;
+            font-weight: bold;
+            border-radius: 4px;
+            transition: all 0.3s;
+        }
+        .nav-bar a.active {
+            background-color: #d4af37;
+            color: #242220;
+        }
+        .nav-bar a:hover:not(.active) {
+            background-color: #c93a2b;
+        }
+
+        .container { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+
+        .intro-box {
+            text-align: center; 
+            margin-bottom: 40px; 
+            background: #fff; 
+            padding: 20px; 
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            border-top: 4px solid #d4af37;
+        }
+
+        .section-title {
+            text-align: center;
+            color: #242220;
+            font-size: 28px;
+            margin: 60px 0 30px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: #d4af37;
+        }
+
+        .castle-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .castle-card {
+            background-color: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
+        }
+        .castle-card:hover { transform: translateY(-10px); }
+
+        .castle-img {
+            width: 100%;
+            height: 200px;
+            object-fit: contain; /* 👈お写真が切れない魔法の設定 */
+            background-color: #eaeaea;
+        }
+
+        .castle-info { padding: 20px; }
+        .castle-info h3 { margin: 0 0 10px; color: #c93a2b; font-size: 20px; }
+        .castle-info p { margin: 0; font-size: 15px; line-height: 1.6; color: #555; }
+
+        footer { text-align: center; padding: 50px; color: #888; border-top: 1px solid #ddd; margin-top: 60px; }
+    </style>
+</head>
+<body>
+
+    <div class="nav-bar">
+        <a href="index.html">織田信長</a>
+        <a href="hideyoshi.html" class="active">豊臣秀吉</a>
+        <a href="#">徳川家康 (建築中)</a>
+    </div>
+
+    <header>
+        <h1>豊臣の城砦</h1>
+        <p>〜 秀吉公の天下統一と黄金の遺構 〜</p>
+    </header>
+
+    <div class="container">
+        
+        <div class="intro-box">
+            <p>足軽から天下人へと昇り詰めた豊臣秀吉。彼の築いた城郭は、戦のための要塞から、自らの圧倒的な権威と財力を天下に示す「見せる城」へと進化を遂げました。</p>
+        </div>
+
+        <h2 class="section-title">秀吉公 縁の城郭</h2>
+        
+        <div class="castle-grid">
+            <div class="castle-card">
+                <img src="castle.hide1.jpg" class="castle-img" alt="長浜城">
+                <div class="castle-info">
+                    <h3>長浜城 (ながはまじょう)</h3>
+                    <p>浅井氏滅亡後、信長公から拝領した地に秀吉公が初めて築いた一国一城の本拠地。琵琶湖の水を取り入れた、出世の出発点となる水城です。</p>
+                </div>
+            </div>
+
+            <div class="castle-card">
+                <img src="castle.hide2.jpg" class="castle-img" alt="姫路城">
+                <div class="castle-info">
+                    <h3>姫路城 (ひめじじょう)</h3>
+                    <p>中国攻めの本拠地として、信長公の許可を得て三層の天守を建築。後の大天守の礎となり、秀吉公の勢力拡大を支えた重要拠点です。</p>
+                </div>
+            </div>
+
+            <div class="castle-card">
+                <img src="castle.hide3.jpg" class="castle-img" alt="大坂城">
+                <div class="castle-info">
+                    <h3>大坂城 (おおさかじょう)</h3>
+                    <p>天下統一の象徴。石山本願寺の跡地に築かれた巨城で、五重八階の黒漆塗りの壁に黄金の装飾が美しく輝く、当時世界最大級の要塞です。</p>
+                </div>
+            </div>
+
+            <div class="castle-card">
+                <img src="castle.hide4.jpg" class="castle-img" alt="聚楽第">
+                <div class="castle-info">
+                    <h3>聚楽第 (じゅらくだい)</h3>
+                    <p>京都に築かれた、政治の中心となる絢爛豪華な邸宅風の城郭。後陽成天皇を迎えるなど、関白としての権威を公家や大名に見せつけました。</p>
+                </div>
+            </div>
+
+            <div class="castle-card">
+                <img src="castle.hide5.jpg" class="castle-img" alt="伏見城">
+                <div class="castle-info">
+                    <h3>伏見城 (ふしみじょう)</h3>
+                    <p>秀吉公が晩年を過ごし、その生涯を閉じた終焉の居城。桃山文化の粋を集めた豪壮華麗な城郭で、大名たちが集う政治の要衝となりました。</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Sengoku Castle Master. <br>豊臣秀吉公の足跡を訪ねて</p>
+    </footer>
+
+</body>
+</html>

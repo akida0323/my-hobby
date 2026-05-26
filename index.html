@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>信長の野望と城めぐり 〜戦国城主の趣味の部屋〜</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f7f5f0;
+            color: #2b2b2b;
+            font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', sans-serif;
+        }
+
+        /* 🗺️ ページを切り替えるメニュー（ナビゲーションバー） */
+        .nav-bar {
+            background-color: #3a3532;
+            text-align: center;
+            padding: 12px;
+        }
+        .nav-bar a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 8px 20px;
+            margin: 0 10px;
+            font-weight: bold;
+            border-radius: 4px;
+            transition: all 0.3s;
+        }
+        .nav-bar a.active {
+            background-color: #de3121; /* 信長公のテーマ：織田赤 */
+            color: #ffffff;
+        }
+        .nav-bar a:hover:not(.active) {
+            background-color: #555;
+        }
+
+        header {
+            background-color: #3a3532;
+            color: #e6b422;
+            text-align: center;
+            padding: 60px 20px;
+            border-bottom: 5px solid #de3121;
+        }
+
+        header h1 { margin: 0; font-size: 36px; letter-spacing: 4px; }
+        header p { margin: 15px 0 0 0; color: #ffffff; font-size: 18px; }
+
+        .container { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+
+        .intro-box {
+            text-align: center; 
+            margin-bottom: 40px; 
+            background: #fff; 
+            padding: 20px; 
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        .section-title {
+            text-align: center;
+            color: #3a3532;
+            font-size: 28px;
+            margin: 60px 0 30px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: #de3121;
+        }
+
+        .castle-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .castle-card {
+            background-color: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
+        }
+        .castle-card:hover { transform: translateY(-10px); }
+
+        .castle-img {
+            width: 100%;
+            height: 200px;
+            object-fit: contain;
+            background-color: #eaeaea;
+        }
+
+        .castle-info { padding: 20px; }
+        .castle-info h3 { margin: 0 0 10px; color: #de3121; font-size: 20px; }
+        .castle-info p { margin: 0; font-size: 15px; line-height: 1.6; color: #555; }
+
+        .game-banner {
+            background-color: #3a3532;
+            color: #fff;
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .game-button {
+            display: inline-block;
+            background-color: #de3121;
+            color: #ffffff;
+            font-size: 22px;
+            font-weight: bold;
+            padding: 20px 50px;
+            text-decoration: none;
+            border-radius: 50px;
+            box-shadow: 0 6px 0 #991c12;
+            margin-top: 20px;
+        }
+
+        footer { text-align: center; padding: 50px; color: #888; }
+    </style>
+</head>
+<body>
+
+    <div class="nav-bar">
+        <a href="index.html" class="active">織田信長</a>
+        <a href="hideyoshi.html">豊臣秀吉</a>
+        <a href="ieyasu.html">徳川家康</a>
+    </div>
+
+    <header>
+        <h1>織田の城砦</h1>
+        <p>〜 信長公の歩みと歴史の庵 〜</p>
+    </header>
+
+    <div class="container">
+        
+        <div class="intro-box">
+            <p>戦国時代の風雲児・織田信長。彼が築き、拠り所とした城郭を巡りながら、天下布武への道を辿ります。</p>
+        </div>
+
+        <h2 class="section-title">信長公 縁の城郭</h2>
+        
+        <div class="castle-grid">
+            <div class="castle-card">
+                <img src="castle1.jpg" class="castle-img" alt="勝幡城">
+                <div class="castle-info">
+                    <h3>勝幡城 (しょばたじょう)</h3>
+                    <p>信長公の生誕地とされる城。尾張と伊勢を結ぶ交通の要所に築かれた、織田弾正忠家発展の礎となった平城です。</p>
+                </div>
+            </div>
+
+            <div class="castle-card">
+                <img src="castle2.jpg" class="castle-img" alt="那古野城">
+                <div class="castle-info">
+                    <h3>那古野城 (なごやじょう)</h3>
+                    <p>父・信秀から譲り受け、信長公が青年時代を過ごした拠点。現在の名古屋城二の丸付近に位置していました。</p>
+                </div>
+            </div>
+
+            <div class="castle-card">
+                <img src="castle3.jpg" class="castle-img" alt="清州城">
+                <div class="castle-info">
+                    <h3>清州城 (きよすじょう)</h3>
+                    <p>尾張統一の本拠地。桶狭間の戦いへ出陣した地であり、ここから天下への第一歩が刻まれました。</p>
+                </div>
+            </div>
+
+            <div class="castle-card">
+                <img src="castle4.jpg" class="castle-img" alt="小牧山城">
+                <div class="castle-info">
+                    <h3>小牧山城 (こまきやまじょう)</h3>
+                    <p>美濃攻略のために築かれた大規模な城郭。信長公が初めて自ら設計し、石垣を本格的に採用し始めた記念すべき城です。</p>
+                </div>
+            </div>
+
+            <div class="castle-card">
+                <img src="castle5.jpg" class="castle-img" alt="岐阜城">
+                <div class="castle-info">
+                    <h3>岐阜城 (ぎふじょう)</h3>
+                    <p>「天下布武」の印を使い始めた地。金華山の山頂にそびえ、その壮麗さは宣教師ルイス・フロイスも驚嘆したと言われています。</p>
+                </div>
+            </div>
+
+            <div class="castle-card">
+                <img src="castle6.jpg" class="castle-img" alt="安土城">
+                <div class="castle-info">
+                    <h3>安土城 (あづちじょう)</h3>
+                    <p>信長公の集大成。五重六階の絢爛豪華な天主（安土山）がそびえ、城郭建築の歴史を塗り替えた幻の名城です。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-banner">
+            <h2>🎮 娯楽の間</h2>
+            <p>信長公となって、迫りくる敵を斬り伏せ、安土城を目指せ！</p>
+            <a href="https://akida0323.github.io/samurai-run/" target="_blank" class="game-button">
+                『本能寺脱出！安土への道』を遊ぶ ⚔️
+            </a>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Sengoku Castle Master. <br>織田信長公の足跡を訪ねて</p>
+    </footer>
+
+</body>
+</html>

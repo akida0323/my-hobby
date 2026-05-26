@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>徳川の太平と不落の名城 〜戦国城主の趣味の部屋〜</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f4f6f9; /* 落ち着いた風格のある薄いグレー */
+            color: #2b2b2b;
+            font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', sans-serif;
+        }
+
+        /* 徳川家康公のテーマ：深い濃紺（葵ネイビー）と金、漆喰の白 */
+        header {
+            background-color: #1b2e44; /* 深みのある濃紺 */
+            color: #d4af37; /* 葵の紋にふさわしい金 */
+            text-align: center;
+            padding: 50px 20px;
+            border-bottom: 5px solid #6b7c96; /* 堅実な戦国石垣のグレー */
+        }
+
+        header h1 { margin: 0; font-size: 36px; letter-spacing: 4px; }
+        header p { margin: 15px 0 0 0; color: #ffffff; font-size: 18px; }
+
+        /* 🗺️ ページを切り替えるメニュー */
+        .nav-bar {
+            background-color: #1b2e44;
+            text-align: center;
+            padding: 12px;
+            border-bottom: 1px solid #d4af37;
+        }
+        .nav-bar a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 8px 20px;
+            margin: 0 10px;
+            font-weight: bold;
+            border-radius: 4px;
+            transition: all 0.3s;
+        }
+        .nav-bar a.active {
+            background-color: #d4af37;
+            color: #1b2e44;
+        }
+        .nav-bar a:hover:not(.active) {
+            background-color: #334e68;
+        }
+
+        .container { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+
+        .intro-box {
+            text-align: center; 
+            margin-bottom: 40px; 
+            background: #fff; 
+            padding: 20px; 
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            border-top: 4px solid #1b2e44;
+        }
+
+        .section-title {
+            text-align: center;
+            color: #1b2e44;
+            font-size: 28px;
+            margin: 60px 0 30px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: #d4af37;
+        }
+
+        .castle-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .castle-card {
+            background-color: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
+        }
+        .castle-card:hover { transform: translateY(-10px); }
+
+        .castle-img {
+            width: 100%;
+            height: 200px;
+            object-fit: contain;
+            background-color: #eaeaea;
+        }
+
+        .castle-info { padding: 20px; }
+        .castle-info h3 { margin: 0 0 10px; color: #1b2e44; font-size: 20px; }
+        .castle-info p { margin: 0; font-size: 15px; line-height: 1.6; color: #555; }
+
+        footer { text-align: center; padding: 50px; color: #888; border-top: 1px solid #ddd; margin-top: 60px; }
+    </style>
+</head>
+<body>
+
+    <div class="nav-bar">
+        <a href="index.html">織田信長</a>
+        <a href="hideyoshi.html">豊臣秀吉</a>
+        <a href="ieyasu.html" class="active">徳川家康</a>
+    </div>
+
+    <header>
+        <h1>徳川の城砦</h1>
+        <p>〜 家康公の忍耐と天下泰平の礎 〜</p>
+    </header>
+
+    <div class="container">
+        
+        <div class="intro-box">
+            <p>幾多、至難の苦節を乗り越え、二百六十年にわたる江戸幕府の平穏を築いた徳川家康。彼の縁の城郭は、戦い抜くための堅固な要塞から、天下を統治し平和を維持するための巨大都市へと発展していきました。</p>
+        </div>
+
+        <h2 class="section-title">家康公 縁の城郭</h2>
+        
+        <div class="castle-grid">
+            <div class="castle-card">
+                <img src="castle.ieyasu1.jpg" class="castle-img" alt="岡崎城">
+                <div class="castle-info">
+                    <h3>岡崎城 (おかざきじょう)</h3>
+                    <p>家康公が誕生した神聖なる地。徳川天下取りの出発点であり、数々の試練を共にした最強の三河武士団の精神的支柱となった名城です。</p>
+                </div>
+            </div>
+
+            <div class="castle-card">
+                <img src="castle.ieyasu2.jpg" class="castle-img" alt="浜松城">
+                <div class="castle-info">
+                    <h3>浜松城 (はままつじょう)</h3>
+                    <p>三方ヶ原の戦いなど、武田信玄との激闘を戦い抜いた拠点。多くの徳川重臣がここから出世していったため「出世城」としても有名です。</p>
+                </div>
+            </div>
+
+            <div class="castle-card">
+                <img src="castle.ieyasu3.jpg" class="castle-img" alt="江戸城">
+                <div class="castle-info">
+                    <h3>江戸城 (えどじょう)</h3>
+                    <p>徳川幕府の本拠地であり、日本最大の規模を誇る大要塞。広大な堀と強固な桝形、そして天下普請によって築かれた至高の統治拠点です。</p>
+                </div>
+            </div>
+
+            <div class="castle-card">
+                <img src="castle.ieyasu4.jpg" class="castle-img" alt="駿府城">
+                <div class="castle-info">
+                    <h3>駿府城 (すんぷじょう)</h3>
+                    <p>家康公が幼少期を過ごし、そして晩年に「大御所」として再び戻り天下を動かした終焉の城。三重の堀に守られた、大御所政治の舞台です。</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Sengoku Castle Master. <br>徳川家康公の足跡を訪ねて</p>
+    </footer>
+
+</body>
+</html>
